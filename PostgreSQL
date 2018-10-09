@@ -1,0 +1,17 @@
+How To Install and Use PostgreSQL on Ubuntu 16.04 
+
+Installation
+
+    sudo apt-get update
+    sudo apt-get install postgresql postgresql-client
+
+Switch over to the postgres account on your server by typing:
+
+    sudo -i -u postgres
+
+Exit out of the PostgreSQL prompt by typing:
+
+    \q
+    
+sudo -u postgres createuser --interactive
+
