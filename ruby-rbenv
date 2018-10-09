@@ -49,3 +49,9 @@ we will turn off local documentation for each gem
 
 rbenv rehash
 
+Updating rbenv
+
+As we installed rbenv manually using git, we can upgrade our installation to the most recent version at any time:
+
+    cd ~/.rbenv
+    git pull
