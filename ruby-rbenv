@@ -1,0 +1,51 @@
+How To Install Ruby on Rails with rbenv on Ubuntu 16.04
+sudo apt-get update
+
+Next, let’s install the dependencies required for rbenv and Ruby with apt-get:
+
+sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+
+Install rbenv
+
+Now we are ready to install rbenv. Let's clone the rbenv repository from git. .
+
+    git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+From here, you should add ~/.rbenv/bin to your $PATH so that you can use rbenv's command line utility. Also adding ~/.rbenv/bin/rbenv init to your ~/.basrc file will let you load rbenv automatically.
+
+    echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+    echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+Next, source rbenv by typing:
+
+     source ~/.bashrc
+
+You can check to see if rbenv was set up properly by using the type command, which will display more information about rbenv:
+
+    type rbenv
+Your terminal window should output the following:
+
+Output
+rbenv is a function
+
+Install ruby-build, which we will install as a plugin for rbenv through git:
+
+    git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+Install Ruby
+
+rbenv install -l
+
+rbenv install 2.5.0
+
+rbenv global 2.5.0
+
+Verify that Ruby was properly installed by checking your version number:
+
+ruby -v
+
+we will turn off local documentation for each gem
+    echo "gem: --no-document" > ~/.gemrc
+    gem install bundler
+
+rbenv rehash
+
