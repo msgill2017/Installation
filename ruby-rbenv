@@ -55,3 +55,10 @@ As we installed rbenv manually using git, we can upgrade our installation to the
 
     cd ~/.rbenv
     git pull
+
+Uninstalling Ruby versions
+
+
+For example, typing this will uninstall Ruby version 2.1.3:
+
+    rbenv uninstall 2.1.3
