@@ -1,0 +1,13 @@
+Install Rails
+
+
+    gem install rails
+
+If you would like to install a specific version of Rails, you can list the valid versions of Rails by doing a search, 
+which will output a long list of possible versions. We can then install a specific version, such as 4.2.7:
+
+    gem search '^rails$' --all
+    gem install rails -v 4.2.7
+
+rbenv rehash
+
