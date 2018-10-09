@@ -1,0 +1,33 @@
+
+Install Node.js
+
+# Install nodenv
+  git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+
+# Optional: Install bash extensions
+  cd ~/.nodenv && src/configure && make -C src
+
+# Add nodenv to the shell's $PATH.
+  
+  echo 'export PATH="$HOME/.nodenv/bin:$PATH"' >> ~/.bash_profile
+  echo export PATH="$HOME/.nodenv/bin:$PATH" >> ~/.bashrc
+  echo eval "$(nodenv init -)" >> ~/.bashrc
+
+# Run nodenv init and follow the instructions to initialize nodenv on any shell
+  ~/.nodenv/bin/nodenv init
+
+# Source bash_profile
+ source ~/.bash_profile
+
+Install node-build
+
+  git clone https://github.com/nodenv/node-build.git $(nodenv root)/plugins/node-build
+
+You can find the latest LTS version here: https://nodejs.org/en/download/ Currently, this is v8.12.0 Install and activate it with:
+
+  nodenv install 8.12.0
+  nodenv rehash
+
+make nodejs global
+
+  nodenv global 8.12.0
