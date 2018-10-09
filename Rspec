@@ -1,0 +1,7 @@
+Install following rspec gems according to your needs
+
+gem install rspec rspec-rails rspec-rails-matchers 
+
+goto ruby project directory 
+
+rspec --init
