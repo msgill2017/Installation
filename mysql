@@ -1,0 +1,8 @@
+To install it, simply update the package index on your server and install the default package with apt-get.
+
+sudo apt-get update
+sudo apt-get install mysql-server
+You'll be prompted to create a root password during the installation. Choose a secure one and make sure you remember it, because you'll need it later. Next, we'll finish configuring MySQL.
+
+if your installing rails den
+sudo apt-get install libmysqlclient-dev
